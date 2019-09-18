@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://v3.framework7.io/docs/button.html -->
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Button | Framework7 Documentation</title>
+<meta property="og:image" content="http://framework7.io/i/f7-banner.jpg">
+<meta name="viewport" content="width=device-width, viewport-fit=cover">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@framework7io">
+<meta name="twitter:creator" content="@framework7io">
+<meta name="twitter:title" content="Button | Framework7 Documentation">
+<meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/31954178?s=200&amp;v=4">
+<link rel="stylesheet" href="./Button _ Framework7 Documentation_files/normalize.css">
+<link rel="stylesheet" href="./Button _ Framework7 Documentation_files/main.css">
+<link rel="shortcut icon" href="https://v3.framework7.io/i/favicon.png">
+<script type="text/javascript" async="" src="./Button _ Framework7 Documentation_files/analytics.js.descarga"></script><script src="./Button _ Framework7 Documentation_files/modernizr-2.7.1.min.js.descarga"></script>
+<script id="_carbonads_projs" type="text/javascript" src="./Button _ Framework7 Documentation_files/CKYIE5QJ.json"></script><script type="text/javascript" async="" src="./Button _ Framework7 Documentation_files/bsa.js.descarga"></script><script id="_bsa_srv-CKYD627I_0" type="text/javascript" src="./Button _ Framework7 Documentation_files/CKYD627I.json"></script></head>
+<body class="body-docs" style="">
+<header class="internal-header">
+<div class="center">
+<div class="logo-holder"><a class="logo" href="https://v3.framework7.io/"></a></div>
+<div class="header-content">
+<div class="title">Framework7
+<div class="version">v3</div>
+</div>
+<ul class="nav">
+<li><a href="https://v3.framework7.io/docs/">Docs</a>
+<ul>
+<li><a href="https://v3.framework7.io/docs/introduction.html">Getting Started</a></li>
+<li><a href="https://v3.framework7.io/docs/">Framework7 Core / API</a></li>
+<li><a href="https://v3.framework7.io/vue/">Framework7 Vue</a></li>
+<li><a href="https://v3.framework7.io/react/">Framework7 React</a></li>
+<li><a href="https://framework7.io/icons/" target="_blank">Framework7 Icons</a></li>
+<li><a href="https://v3.framework7.io/docs/dom7.html">Dom7</a></li>
+<li><a href="http://idangero.us/template7/" target="_blank">Template7</a></li>
+</ul>
+</li>
+<li><a href="https://v3.framework7.io/docs/button.html#">Resources</a>
+<ul>
+<li><a href="http://forum.framework7.io/" target="_blank">Community Forum</a></li>
+<li><a href="https://framework7.io/tutorials/" target="_blank">Tutorials</a></li>
+<li><a href="https://framework7.io/templates/" target="_blank">Templates</a></li>
+<li><a href="https://framework7.io/plugins/" target="_blank">Plugins</a></li>
+<li><a href="https://framework7.io/showcase/" target="_blank">Apps Showcase</a></li>
+<li><a href="https://jobs.framework7.io/" target="_blank">Jobs &amp; Developers</a></li>
+</ul>
+</li>
+<li><a href="http://blog.framework7.io/" target="_blank">Blog</a></li>
+<li><a href="https://framework7.io/contribute/" target="_blank">Contribute</a></li>
+</ul>
+<div class="patreon-github"><a class="patreon-button" href="https://www.patreon.com/vladimirkharlampidi" target="_blank"><span class="patreon-logo"></span><span class="patreon-text">Support Framework7</span></a>
+<div class="github-buttons"><a href="https://github.com/framework7io/framework7/" target="_blank"><img src="./Button _ Framework7 Documentation_files/gh-logo.png"></a><a class="gh-stars" href="https://github.com/framework7io/framework7/" target="_blank"><span>14,660</span> stars</a><a class="gh-forks" href="https://github.com/framework7io/framework7/" target="_blank"><span>3,070</span> forks</a></div>
+</div>
+</div>
+<div class="carbon"><script async="" type="text/javascript" src="./Button _ Framework7 Documentation_files/carbon.js.descarga" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QNCAYIT2JJCESLYKQMCYSIPKJECA7IEZ3JCWSD5237CTYD553KC6BIK27JC6AIKK3EHJNCLSIZ?segment=placement:framework7io;" class="carbon-img" target="_blank" rel="noopener"><img src="./Button _ Framework7 Documentation_files/1550855362-cc_dark.png" alt="ads via Carbon" border="0" height="100" width="130" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QNCAYIT2JJCESLYKQMCYSIPKJECA7IEZ3JCWSD5237CTYD553KC6BIK27JC6AIKK3EHJNCLSIZ?segment=placement:framework7io;" class="carbon-text" target="_blank" rel="noopener">Adobe Creative Cloud for Teams starting at $29.99 per month.</a></span><a href="http://carbonads.net/?utm_source=framework7io&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener">ads via Carbon</a></span></div></div>
+</div>
+</header>
+<div class="bsa-cpc"></div>
+<main>
+<div class="center">
+<div class="docs-demo-device docs-demo-device-ios visible" style="top: 2311.45px;">
+<div class="docs-demo-device-buttons"><a class="active" data-theme="ios">iOS</a><a data-theme="md">Android</a></div>
+<div class="docs-demo-device-iframe">
+<iframe width="320" height="548" frameborder="0" scrolling="on" src="./Button _ Framework7 Documentation_files/button.html"></iframe>
+<div class="fade-overlay"></div>
+</div>
+<div class="docs-demo-device-android-buttons">
+<div class="triangle"></div>
+<div class="circle"></div>
+ <div class="square"></div>
+</div>
+</div>
+<div class="docs-nav">
+<div class="docs-nav-toggle"><span></span><span></span><span></span></div>
+<ul>
+<li>
+<div class="title">Get Started</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/introduction.html">Introduction</a></li>
+<li><a href="https://v3.framework7.io/docs/kitchen-sink.html">Kitchen Sink</a></li>
+<li><a href="https://v3.framework7.io/docs/installation.html">Installation</a></li>
+<li><a href="https://v3.framework7.io/docs/app-layout.html">App HTML Layout</a></li>
+<li><a href="https://v3.framework7.io/docs/rtl-layout.html">RTL Layout</a></li>
+<li><a href="https://v3.framework7.io/docs/init-app.html">Initialize App</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Events</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/events.html">Events</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Router / Navigation</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/routes.html">Routes</a></li>
+<li><a href="https://v3.framework7.io/docs/router-component.html">Router Component</a></li>
+<li><a href="https://v3.framework7.io/docs/view.html#router-api-methods-properties">Router API</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Components</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/app.html">App / Core</a></li>
+<li><a href="https://v3.framework7.io/docs/accordion.html">Accordion / Collapsible</a></li>
+<li><a href="https://v3.framework7.io/docs/action-sheet.html">Action Sheet / Actions</a></li>
+<li><a href="https://v3.framework7.io/docs/autocomplete.html">Autocomplete</a></li>
+<li><a href="https://v3.framework7.io/docs/badge.html">Badge</a></li>
+<li><a href="https://v3.framework7.io/docs/block.html">Block / Content Block</a></li>
+<li class="active"><a href="https://v3.framework7.io/docs/button.html" class="active">Button</a></li>
+<li><a href="https://v3.framework7.io/docs/calendar.html">Calendar / Datepicker</a></li>
+<li><a href="https://v3.framework7.io/docs/cards.html">Cards</a></li>
+<li><a href="https://v3.framework7.io/docs/checkbox.html">Checkbox</a></li>
+<li><a href="https://v3.framework7.io/docs/chips.html">Chips / Tags</a></li>
+<li><a href="https://v3.framework7.io/docs/contacts-list.html">Contacts List</a></li>
+<li><a href="https://v3.framework7.io/docs/data-table.html">Data Table</a></li>
+<li><a href="https://v3.framework7.io/docs/dialog.html">Dialog</a></li>
+<li><a href="https://v3.framework7.io/docs/elevation.html">Elevation</a></li>
+<li><a href="https://v3.framework7.io/docs/floating-action-button.html">Floating Action Button / FAB</a></li>
+<li><a href="https://v3.framework7.io/docs/form.html">Form Data / Storage</a></li>
+<li><a href="https://v3.framework7.io/docs/gauge.html">Gauge</a></li>
+<li><a href="https://v3.framework7.io/docs/grid.html">Grid / Layout Grid</a></li>
+<li><a href="https://v3.framework7.io/docs/icons.html">Icons</a></li>
+<li><a href="https://v3.framework7.io/docs/infinite-scroll.html">Infinite Scroll</a></li>
+<li><a href="https://v3.framework7.io/docs/inputs.html">Inputs / Form Inputs</a></li>
+<li><a href="https://v3.framework7.io/docs/lazy-load.html">Lazy Load</a></li>
+<li><a href="https://v3.framework7.io/docs/link.html">Link</a></li>
+<li><a href="https://v3.framework7.io/docs/list-view.html">List View</a></li>
+<li><a href="https://v3.framework7.io/docs/list-index.html">List Index</a></li>
+<li><a href="https://v3.framework7.io/docs/login-screen.html">Login Screen</a></li>
+<li><a href="https://v3.framework7.io/docs/messagebar.html">Messagebar</a></li>
+<li><a href="https://v3.framework7.io/docs/messages.html">Messages</a></li>
+<li><a href="https://v3.framework7.io/docs/navbar.html">Navbar</a></li>
+<li><a href="https://v3.framework7.io/docs/notification.html">Notification</a></li>
+<li><a href="https://v3.framework7.io/docs/page.html">Page</a></li>
+<li><a href="https://v3.framework7.io/docs/panel.html">Panel / Side Panels</a></li>
+<li><a href="https://v3.framework7.io/docs/photo-browser.html">Photo Browser</a></li>
+<li><a href="https://v3.framework7.io/docs/picker.html">Picker</a></li>
+<li><a href="https://v3.framework7.io/docs/popover.html">Popover</a></li>
+<li><a href="https://v3.framework7.io/docs/popup.html">Popup</a></li>
+<li><a href="https://v3.framework7.io/docs/preloader.html">Preloader</a></li>
+<li><a href="https://v3.framework7.io/docs/progressbar.html">Progressbar</a></li>
+<li><a href="https://v3.framework7.io/docs/pull-to-refresh.html">Pull to Refresh</a></li>
+<li><a href="https://v3.framework7.io/docs/radio.html">Radio</a></li>
+<li><a href="https://v3.framework7.io/docs/range-slider.html">Range Slider</a></li>
+<li><a href="https://v3.framework7.io/docs/searchbar.html">Searchbar</a></li>
+<li><a href="https://v3.framework7.io/docs/sheet-modal.html">Sheet Modal</a></li>
+<li><a href="https://v3.framework7.io/docs/smart-select.html">Smart Select</a></li>
+<li><a href="https://v3.framework7.io/docs/sortable-list.html">Sortable List</a></li>
+<li><a href="https://v3.framework7.io/docs/statusbar.html">Statusbar</a></li>
+<li><a href="https://v3.framework7.io/docs/stepper.html">Stepper</a></li>
+<li><a href="https://v3.framework7.io/docs/subnavbar.html">Subnavbar</a></li>
+<li><a href="https://v3.framework7.io/docs/swiper.html">Swiper</a></li>
+<li><a href="https://v3.framework7.io/docs/swipeout.html">Swipeout</a></li>
+<li><a href="https://v3.framework7.io/docs/tabs.html">Tabs</a></li>
+<li><a href="https://v3.framework7.io/docs/timeline.html">Timeline</a></li>
+<li><a href="https://v3.framework7.io/docs/toast.html">Toast</a></li>
+<li><a href="https://v3.framework7.io/docs/toggle.html">Toggle</a></li>
+<li><a href="https://v3.framework7.io/docs/toolbar-tabbar.html">Toolbar / Tabbar</a></li>
+<li><a href="https://v3.framework7.io/docs/tooltip.html">Tooltip</a></li>
+<li><a href="https://v3.framework7.io/docs/vi.html">Video Intelligence (vi)</a></li>
+<li><a href="https://v3.framework7.io/docs/view.html">View / Router</a></li>
+<li><a href="https://v3.framework7.io/docs/virtual-list.html">Virtual List</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Framework7 Icons</div>
+<ul>
+<li><a href="https://v3.framework7.io/icons/">Framework7 Icons Cheatsheet</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Styling</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/iphone-x.html">iPhone X</a></li>
+<li><a href="https://v3.framework7.io/docs/color-themes.html">Color Themes</a></li>
+<li><a href="https://v3.framework7.io/docs/typography.html">Typography</a></li>
+<li><a href="https://v3.framework7.io/docs/hairlines.html">Hairlines</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Dom7</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/dom7.html">Dom7</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Template7</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/template7.html">Template7</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Fast Clicks</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/fast-clicks.html">Fast Clicks</a></li>
+<li><a href="https://v3.framework7.io/docs/active-state.html">Active State</a></li>
+<li><a href="https://v3.framework7.io/docs/tap-hold.html">Tap Hold Event (Long Tap)</a></li>
+<li><a href="https://v3.framework7.io/docs/touch-ripple.html">Touch Ripple (MD Theme)</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Utilities</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/request.html">Request / Ajax</a></li>
+<li><a href="https://v3.framework7.io/docs/utils.html">Utils</a></li>
+<li><a href="https://v3.framework7.io/docs/device.html">Device</a></li>
+<li><a href="https://v3.framework7.io/docs/support.html">Support</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Plugins API</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/plugins-api.html">Plugins API</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Lazy Modules</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/lazy-modules.html">Lazy Modules</a></li>
+</ul>
+</li>
+<li>
+<div class="title">Custom Build</div>
+<ul>
+<li><a href="https://v3.framework7.io/docs/custom-build.html">Custom Build</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="docs-content">
+<div class="improve-docs-link"><a href="https://github.com/framework7io/framework7-website/edit/master/src/pug/docs/button.pug" target="_blank">Improve this Doc</a></div>
+<h1>Button</h1>
+<ul class="docs-index"><li><a href="https://v3.framework7.io/docs/button.html#button-layout">Button Layout</a></li><li><a href="https://v3.framework7.io/docs/button.html#button-modifier-classes">Button Modifier Classes</a></li><li><a href="https://v3.framework7.io/docs/button.html#segmented-control">Segmented Control</a></li><ul><li><a href="https://v3.framework7.io/docs/button.html#segmented-layout">Segmented Layout</a></li><li><a href="https://v3.framework7.io/docs/button.html#segmented-modifier-classes">Segmented Modifier Classes</a></li></ul><li><a href="https://v3.framework7.io/docs/button.html#examples">Examples</a></li></ul>
+<p>Framework7 comes with a bunch of ready to use buttons. All you need to do is add the appropriate classes to your links or submit/button inputs:</p>
+<h2 id="button-layout">Button Layout</h2>
+<p>Button layout is pretty simple. Just add <code>button</code> class to links or submit/button inputs:</p><pre><code class="html"><span class="token comment">&lt;!-- link as button --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- &lt;button&gt; as button --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- &lt;input type="submit"&gt; as button --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+<h2 id="button-modifier-classes">Button Modifier Classes</h2>
+<p>There is a variety of different buttons in Framework7. Different button styles achieved by additional modifier classes and their combinations:</p>
+<table class="props-table">
+<tbody>
+<tr>
+<td>button-fill</td>
+<td>Filled-style button</td>
+</tr>
+<tr>
+<td>button-fill-ios</td>
+<td>Button will have filled-style only in iOS theme</td>
+</tr>
+<tr>
+<td>button-fill-md</td>
+<td>Button will have filled-style only in MD theme</td>
+</tr>
+<tr>
+<td>button-round</td>
+<td>Rounded button</td>
+</tr>
+<tr>
+<td>button-round-ios</td>
+<td>Button will be rounded only in iOS theme</td>
+</tr>
+<tr>
+<td>button-round-md</td>
+<td>Button will be rounded only in MD theme</td>
+</tr>
+<tr>
+<td>button-small</td>
+<td>Small button</td>
+</tr>
+<tr>
+<td>button-small-ios</td>
+<td>Button will be small only in iOS theme</td>
+</tr>
+<tr>
+<td>button-small-md</td>
+<td>Button will be small only in MD theme</td>
+</tr>
+<tr>
+<td>button-big</td>
+<td>Big button</td>
+</tr>
+<tr>
+<td>button-big-ios</td>
+<td>Button will be big only in iOS theme</td>
+</tr>
+<tr>
+<td>button-big-md</td>
+<td>Button will be big only in MD theme</td>
+</tr>
+<tr>
+<td>button-raised</td>
+<td>Raised button&nbsp;<b class="md-only">This will have effect only in MD theme</b></td>
+</tr>
+<tr>
+<td>button-outline</td>
+<td>Outline button&nbsp;<b class="md-only">This will have effect only in MD theme</b></td>
+</tr>
+<tr>
+<td>button-active</td>
+<td>Active/selected button state. For use inside of Segmented</td>
+</tr>
+<tr>
+<td>color-[color]</td>
+<td>Color button, where <b>[color]</b> is one of the <a href="https://v3.framework7.io/docs/color-themes.html">default colors</a></td>
+</tr>
+</tbody>
+</table>
+<p>And of course we can mix these classes:</p><pre><code class="html"><span class="token comment">&lt;!-- rounded button --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- rounded and filled button --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- raised, round, fill, big button --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round button-fill button-raised button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- small red button --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-small color-red<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h2 id="segmented-control">Segmented Control</h2>
+<p>A segmented control is a linear set of two or more segments (buttons), each of which functions as a mutually exclusive button. Within the control, all buttons are equal in width. Segmented controls are often used to display different views (switch tabs).</p>
+<h3 id="segmented-layout">Segmented Layout</h3>
+<p>Segmented control layout is pretty simple, just a <code>&lt;div&gt;</code> with a <code>segmented</code> class around buttons:</p><pre><code class=""><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>segmented<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Tab 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Tab 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h3 id="segmented-modifier-classes">Segmented Modifier Classes</h3>
+<p>As well as buttons, segmented also supports few additional classes for styling:</p>
+<table class="props-table">
+<tbody>
+<tr>
+<td>segmented-round</td>
+<td>Rounded segmented</td>
+</tr>
+<tr>
+<td>segmented-raised</td>
+<td>Raised segmented &nbsp;<b class="md-only">This will have effect only in MD theme</b></td>
+</tr>
+</tbody>
+</table>
+<div class="with-device">
+<h2 data-device-preview="../docs-demos/core/button.html" id="examples">Examples</h2>
+<h4>Usual Buttons</h4>
+<p>Add <code>button</code> class.</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button col button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Round<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h4>Fill Buttons</h4>
+<p>Add <code>button-fill</code> class.</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Round<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h4>Outline Buttons</h4>
+<p>Add <code>button-outline</code> class.</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-outline button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Round<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h4>Raised Buttons</h4>
+<p>Add <code>button-raised</code> class.</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-raised<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-raised button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Fill<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-outline button-raised<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Outline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-raised button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Round<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-raised button-fill button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Fill<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-outline button-round button-raised<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Outline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h4>Segmented Buttons</h4>
+<p>Put buttons inside of <code>segmented</code></p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>segmented segmented-raised<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Active<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>segmented<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Outline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Outline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-outline button-active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Active<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>segmented segmented-raised segmented-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round button-active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Active<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>segmented segmented-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round button-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Outline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round button-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Outline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button button-round button-outline button-active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Active<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h4>Big Buttons</h4>
+<p>Add <code>button-big</code> class.</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-big<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-big button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Fill<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-big button-raised<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Raised<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-big button-raised button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Raised Fill<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h4>Small Buttons</h4>
+<p>Add <code>button-small</code> class.</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-small button-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Outline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-small button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Fill<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-small button-round<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-small button-round button-outline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Outline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-small button-round button-fill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Fill<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h4>Color Buttons</h4>
+<p>Add <code>color-[color]</code> class. Where <b>[color]</b> is one of the <a href="https://v3.framework7.io/docs/color-themes.html">default colors</a>.</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button color-red<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Red<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button color-green<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Green<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button color-blue<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Blue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button color-pink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Pink<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button color-yellow<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Yellow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button color-orange<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Orange<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button color-gray<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Gray<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button color-black<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Black<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h4>Color Fill Buttons</h4>
+<p>Add <code>button-fill</code> and <code>color-[color]</code> class. Where <b>[color]</b> is one of the <a href="https://v3.framework7.io/docs/color-themes.html">default colors</a>.</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-red<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Red<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-green<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Green<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-blue<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Blue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-pink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Pink<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-yellow<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Yellow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-orange<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Orange<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-gray<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Gray<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-black<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Black<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col button button-fill color-white text-color-black<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>White<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+</div>
+</div>
+</div>
+</main>
+<script src="./Button _ Framework7 Documentation_files/algoliasearchLite.min.js.descarga"></script>
+<script src="./Button _ Framework7 Documentation_files/jquery-1.11.0.min.js.descarga"></script>
+<script src="./Button _ Framework7 Documentation_files/main.js.descarga"></script>
+<script async="" src="./Button _ Framework7 Documentation_files/js"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-74282934-6');
+    </script>
+<script>
+      (function(){
+        var bsa = document.createElement('script');
+           bsa.type = 'text/javascript';
+           bsa.async = true;
+           bsa.src = '//s3.buysellads.com/ac/bsa.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+      })();
+    </script>
+<script src="./Button _ Framework7 Documentation_files/monetization.js.descarga" type="text/javascript"></script>
+<script>
+      (function(){
+        if(typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('default', 'CKYD627I', 'placement:framework7io', {
+          target: '.bsa-cpc',
+          align: 'horizontal',
+          disable_css: 'true'
+        });
+          }
+      })();
+    </script>
+
+</body></html>
